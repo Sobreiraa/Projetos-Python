@@ -75,7 +75,7 @@ class Sistema():
 
 
     def valida_email(self, e_mail):
-        regex = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+        regex = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$' 
         return bool(re.match(regex, e_mail))
 
 
@@ -239,6 +239,8 @@ class Sistema():
         else:
             print()
             print(f"Erro: Usuário com username '{username}' não encontrado.")
+        
+        self.menu()
 
 
     def login(self):
